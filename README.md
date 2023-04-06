@@ -78,3 +78,23 @@
       );
     }
     ```
+
+---
+
+- ScrollView 태그
+
+  - 화면의 스크롤을 사용할 때 쓰는 컴포넌트
+  - ScrollView에서 style을 만들고 싶으면, props 사용이 제한되기에 contentContainerStyle 사용
+    - contentContainerStyle={styles.weather}
+  - props
+    - horizontal
+    - pagingEnabled
+    - showsHorizontalScrollIndicator={false}
+
+- Dimension
+
+  - 화면 크기 width, height 가져오는 API
+
+    ```js
+    const { width: SCREEN_WIDTH } = Dimensions.get("window");
+    ```
